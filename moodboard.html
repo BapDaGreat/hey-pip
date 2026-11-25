@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moodboard &amp; design notes · Pip Marlow concept by Dayle Peña</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Instrument+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&family=DM+Serif+Display&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.mb{padding:8vh 0 14vh}
+.mb h1{font-size:clamp(3rem,8vw,6.5rem);font-weight:800;letter-spacing:-.04em;margin:10px 0 20px}
+.mb .intro{max-width:40em;font-size:1.15rem;color:var(--ink-2)}
+.boards{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin:60px 0}
+.mood{background:var(--paper);border:2px solid var(--ink);border-radius:22px;padding:28px;position:relative}
+.mood.chosen{box-shadow:10px 10px 0 var(--tomato)}
+.mood .stamp{position:absolute;top:-18px;right:20px;background:var(--tomato);color:var(--cream);font-family:var(--hand);font-size:1.5rem;padding:.1em .8em;border-radius:999px;transform:rotate(4deg);border:2px solid var(--ink)}
+.mood h2{font-size:2.2rem;margin-bottom:6px}
+.mood .sub{color:var(--ink-2);font-style:italic;font-family:var(--serif)}
+.sw{display:flex;gap:10px;margin:22px 0}
+.sw span{flex:1;aspect-ratio:1;border-radius:14px;border:2px solid var(--ink);display:flex;align-items:flex-end;padding:8px;font:600 .7rem var(--sans)}
+.type{border-top:2px dashed var(--ink);padding-top:18px;margin-top:6px}
+.type .big{font-size:3rem;line-height:1}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.tiles div{aspect-ratio:1;border-radius:12px;border:2px solid var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--hand);font-size:1.3rem;padding:6px}
+.notes2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 50px;margin-top:30px}
+.notes2 div{border-top:2px solid var(--ink);padding-top:16px}
+.notes2 h3{font-size:1.6rem;margin-bottom:8px}
+.notes2 p{color:var(--ink-2)}
+.back{display:inline-block;margin-top:50px}
+@media (max-width:860px){.boards,.notes2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="nav scrolled">
+  <a class="brand" href="./"><svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 30c0-12 10-20 22-20s22 8 22 20c0 4-3 6-6 6v16c0 3-2 4-4 4H20c-2 0-4-1-4-4V36c-3 0-6-2-6-6z"/></svg><span>Pip Marlow<em>concept notes</em></span></a>
+  <a class="btn btn--small" href="./">← Back to the site</a>
+</header>
+<main class="mb wrap">
+  <p class="kicker">Sample concept · fictional client</p>
+  <h1>How this site <em>became Pip's.</em></h1>
+  <p class="intro">Pip Marlow is a made-up client: a non-diet dietitian in Fremantle who spent nine years as a pastry chef, has a dry sense of humour and a retired greyhound called Biscuit. The brief was a homepage that feels like meeting her. I explored two moodboard directions before designing a single section.</p>
+
+  <div class="boards">
+    <section class="mood chosen" aria-labelledby="m1">
+      <span class="stamp">Chosen</span>
+      <h2 id="m1">A. Bakery counter</h2>
+      <p class="sub">Warm, cheeky, a bit floury. Her kitchen past is the main character.</p>
+      <div class="sw">
+        <span style="background:#c8401f;color:#f5ecdb">Tomato</span>
+        <span style="background:#33402a;color:#f5ecdb">Olive</span>
+        <span style="background:#f2c35b">Butter</span>
+        <span style="background:#f5ecdb">Flour</span>
+        <span style="background:#2a1d12;color:#f5ecdb">Crust</span>
+      </div>
+      <div class="type"><p class="big" style="font-family:Fraunces;font-weight:800">Fraunces <i style="font-weight:400;color:#c8401f">soft</i></p><p>Instrument Sans for reading, Caveat for Pip's handwritten asides.</p></div>
+      <div class="tiles"><div style="background:#f7dc7e">recipe cards</div><div style="background:#f3c6b4">fridge notes</div><div style="background:#cfe0b8">crossed-out rules</div></div>
+    </section>
+    <section class="mood" aria-labelledby="m2">
+      <h2 id="m2">B. Saturday market</h2>
+      <p class="sub">Brighter and calmer. Produce stalls, paper bags, chalkboard prices.</p>
+      <div class="sw">
+        <span style="background:#e9744c">Persimmon</span>
+        <span style="background:#7c9a6a;color:#fff">Fennel</span>
+        <span style="background:#e7d8b6">Paper bag</span>
+        <span style="background:#2d3a3a;color:#fff">Chalk</span>
+        <span style="background:#fffaf0">Linen</span>
+      </div>
+      <div class="type"><p class="big" style="font-family:'DM Serif Display'">DM Serif Display</p><p style="font-family:'Work Sans'">Work Sans for body. Chalk-style labels.</p></div>
+      <div class="tiles"><div style="background:#e7d8b6">price tags</div><div style="background:#cfe0b8">seasonal lists</div><div style="background:#f6c9b3">market map</div></div>
+    </section>
+  </div>
+
+  <p class="kicker">Design notes</p>
+  <h2>What makes it hers</h2>
+  <div class="notes2">
+    <div><h3>One memorable idea</h3><p>The food rules section. Each diet myth gets crossed out as you scroll, with Pip's reply scribbled beside it. It says "non-diet dietitian" without anyone needing to read that phrase.</p></div>
+    <div><h3>Details only Pip could have</h3><p>Her sourdough starter has a name (Gary). Services are written as recipe cards. Testimonials live on a fridge. The footer is signed off by Biscuit.</p></div>
+    <div><h3>Colour with a point of view</h3><p>Tomato, olive and butter instead of the usual clinic mint and white. Every pairing used for text passes WCAG AA contrast, and body copy stays 17px or larger on phones.</p></div>
+    <div><h3>Space used on purpose</h3><p>A huge, confident headline, generous gaps between sections, and one tilted element per section so the page feels handmade rather than templated.</p></div>
+    <div><h3>Built for a Webflow handover</h3><p>Sections are self-contained and reusable (hero, rule list, polaroid about, recipe cards, steps, notes, FAQ, CTA), so the other pages can be built from them. In Figma these would be components with named layers and shared styles.</p></div>
+    <div><h3>Small, kind motion</h3><p>Steam rising off the loaf, Biscuit's ear twitch, counters and gentle reveals. All of it switches off for people who prefer reduced motion.</p></div>
+  </div>
+  <a class="btn back" href="./">See the homepage <span aria-hidden="true">→</span></a>
+  <p style="margin-top:40px;color:var(--ink-2)">Concept and design by Dayle Peña · <a href="https://github.com/BapDaGreat">github.com/BapDaGreat</a></p>
+</main>
+</body>
+</html>
